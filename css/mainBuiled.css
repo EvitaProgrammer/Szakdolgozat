@@ -1,0 +1,45 @@
+/* Some custom styles to beautify this example */
+    .header{
+        padding: 15px;
+        font-size: 18px;
+        min-height: 150px;
+		width: 100%;
+        background: #00000;
+        margin-bottom: 0px;
+		background-image:url(../img/newspaper.jpg);
+		background-size: 100% 100%;
+		opacity: 0.5;
+    }
+    .sidebar{
+        background-image: url(../img/pergamen.png); 
+		background-size: 250%;
+		background-position: center;
+		height: 620px;
+		width: 100%;
+		text-align: center;
+		
+    
+	.map{
+		min-height: 50px;
+		min-width:100%;
+		background-color:#E6E6FA;
+		float:right;
+		
+	}
+	.footer{
+		height:50px;
+		background-image: url(../img/aVMEQR0.jpg);
+		clear:both;
+		opacity: 0.5;
+	}
+	.main {
+		width: 100%;
+	}
+	
+    /* Some custom media query to make 
+       this example even better */
+/*    @media screen and (max-width: 991px){
+        .flexible{
+            min-height: 150px;
+        }
+    }*/
