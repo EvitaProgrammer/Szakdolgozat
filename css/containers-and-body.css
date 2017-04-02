@@ -1,0 +1,141 @@
+/*Some general page settings*/
+header #header{
+	background-image:url(../img/newspaper.jpg);
+	background-size: 100% 100%;
+  width: 100%;
+  min-height: 220px;
+}
+
+body:after {
+    content: "";
+    background: url("../img/bg.png");
+    background-repeat: repeat-y;
+    background-position-x:center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+		z-index: -2;
+    position: fixed;
+}
+
+header #header #header-title{
+	display: inline-block;
+  font-size: 34px;
+  margin: 20px;
+  background: rgba(255,255, 255,.6);
+  padding: 10px;
+  border-radius: 30px 0px 30px 0px;
+}
+
+header #header .headet-title-source{
+  font-size: 18px;
+	margin-left: 100px;
+  white-space: nowrap;
+}
+
+header .navbar{
+  border-radius: 0px;
+}
+
+footer{
+	margin-top: 20px;
+	color: #000000;
+	font: italic bold 10px Georgia, serif; 
+	text-shadow:5px 5px 10px black;
+}
+
+#container #search-col #pergamen{
+  min-height: 600px;    
+	position: relative;
+}
+
+#container #search-col #pergamen:after {
+  content: "";
+  background-image: url(../img/pergamen.png);
+	background-size: 100% 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#container #search-col #pergamen-bottom,
+#container #search-col #pergamen-top{
+	height: 60px;
+	position: relative;
+}
+
+#container #search-col #pergamen-top:after {
+  content: "";
+  background-image: url(../img/pergamen_top.png);
+	background-size: 100% 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#container #search-col #pergamen-bottom:after {
+  content: "";
+  background-image: url(../img/pergamen_bottom.png);
+	background-size: 100% 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#container .checkbox-wrapper input,
+#container .checkbox-wrapper label{
+	cursor: pointer;
+}
+
+#container #search-title-wrapper{
+	margin-bottom: 20px;
+}
+
+#container .search-title{
+	color:black; 
+	font: italic bold 20px Georgia, serif; 
+	text-shadow:5px 5px 10px black;
+}
+
+#container #map{
+	min-height:px;
+}
+
+#container #szem{
+	min-height:px;
+}	
+#container #home{
+	min-height:px;
+}
+
+.submit-button {
+	background-color: white;
+    border: 2px solid #e7e7e7;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #e7e7e7;
+    color: black;
+}

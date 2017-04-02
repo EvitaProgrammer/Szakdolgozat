@@ -1,16 +1,23 @@
+@import url(containers-and-body.css);
+@import url(slider.css);
+@import url(map.css);
+@import url(checkbox.css);
+
 .tooltip-inner {
 	white-space: nowrap;
 }
+
 a.skiplink {
 	position: absolute;
 	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
+	padding: 0px;
+	border: 0px;
+	height: 0px;
+	width: 0px;
 	overflow: hidden;
-	background-color: #f0f0
+	background-color: #f0f0;
 }
+
 a.skiplink:focus {
 	clip: auto;
 	height: auto;
@@ -18,13 +25,14 @@ a.skiplink:focus {
 	background-color: #fff;
 	padding: 0.3em;
 }
+
 #map:focus {
 	outline: #4A74A8 solid 0.15em;
 }
+
 body {
 	margin-left: 0px;
 	margin-top: 0px;
 	margin-right: 0px;
-	margin-bottom: 0px;
-	
+	margin-bottom: 0px;	
 }
