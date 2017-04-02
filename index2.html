@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title>Evelin Szakdolgozat</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap-3.3.7.min.css" type="text/css">
+	<link rel="stylesheet" href="css/ol.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/carousel-and-control.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+
+	<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+	<script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+
+	<script src="js/lib/jquery-1.12.4.min.js"></script>
+	<script src="js/lib/jquery-ui.min.js"></script>
+	<script src="js/lib/ol.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
+	<script src="js/lib/jquery.mobile.custom.min.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/search.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="header" class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<div id="header-title" class="text-left">
+						<div>Szegedi vonatkozású</div>
+						<div>tudósok, hírességek georeferált</div>
+						<div>térképe <span class="headet-title-source">Délmagyar Repositórium alapján</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav role="navigation" class="navbar navbar-default">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="home.html" class="navbar-brand">Kezdőlap</a>
+			</div>
+			<!-- Collection of nav links and other content for toggling -->
+			<div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Térképes kereső</a></li>
+					<li class="active"><a href="index2.html">Eddig feldolgozott szegedi vonatkozású tudósok, művészek</a></li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="controls">
+		<button onclick="location.href = 'home.html';" id="mainPage" class="float-left submit-button">Vissza a Főoldalra</button>
+		<button onclick="location.href = 'index.html';" id="mapSearch" class="float-left submit-button">Térképes kereső</button>
+
+		<h3><b>A Délmagyarország Repozitórium alapján eddig feldolgozott szegedi vonatkozású hírességek, 
+			egyetemi oktatók, tudósok, művészek, alkotók</b><br></h3>
+	</div>
+	
+	<div class="col-lg-12">
+		<div id="szem">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+				<li data-target="#myCarousel" data-slide-to="5"></li>
+				<li data-target="#myCarousel" data-slide-to="6"></li>
+				<li data-target="#myCarousel" data-slide-to="7"></li>
+				<li data-target="#myCarousel" data-slide-to="8"></li>
+				<li data-target="#myCarousel" data-slide-to="9"></li>
+				<li data-target="#myCarousel" data-slide-to="10"></li>
+				<li data-target="#myCarousel" data-slide-to="11"></li>
+				<li data-target="#myCarousel" data-slide-to="12"></li>
+				<li data-target="#myCarousel" data-slide-to="13"></li>
+			</ol>
+
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<h4><b>Balázs Béla</h4>
+					<img src="img/kep1.jpg" alt="Smiley face" width="20%" height="20%">
+					<p>Szeged, 1884. augusztus 4. – Budapest, 1949. május 17. </p>
+					<p>magyar író, filmesztéta, filmrendező, főiskolai tanár</p><br>
+					<p>Balázs Béla, akinek nevét viseli ma a Szegedi Belvárosi Mozi díszterme, szegedi születésű író, esztéta, a magyar kultúra jelentős egyénisége.
+					Balázs Béla aktívan részt vett a város kulturális életében, írásai jelentek meg a Nyugatban, a szegedi Délmagyarország napilapban,stb. 
+					Rendezett a Szegedi Nemzeti Színházban, előadásokat tartott a városban, és részt vett különféle kulturális eseményeken. 
+					Emigrációja idején kezdett el érdeklődni a mozgókép és a filmművészet esztétikája iránt. 
+					Közreműködött a Valahol Európában című film megírásában is. A 1945-ben a város vendégül látta regénye megírásának idejére. 
+					1949 májusában érte váratlanul a halál, agyvérzés következtében. 
+					</p>
+					Bővebben:<a href="http://www.sk-szeged.hu/statikus_html/kiallitas/balazsbela/index.html">Balázs Béla emlékkiállítás és életrajz</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b>Berdál Valéria</h4>
+					<img src="img/kep2.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Kőszeg, 1933. július 4. – Szeged, 2003. december 17. </p>
+					<p> magyar Liszt-díjas érdemes művész, szoprán operaénekesnő, zenekonzervatóriumi énektanár, Zeneművészeti Főiskola docens oktatója </p><br>
+					<p> 1955-ben a Zeneakadémia elvégzése után került Szegedre, majd egész munkásságát a városnak szentelte. 
+					Szerződtették a Szegedi Nemzeti Színházhoz. Első szerepe Antónia volt a Hoffmann meséiben. 
+					Miután elbúcsúzott számos szerepe után a színháztól, életét a tanításnak és felkészítésnek szentelte. 
+					Mindenki „Valikája” szívvel-lélekkel adta át tudását növendékeinek. 
+					71 évesen vesztette életét, hosszú betegeskedés után Szegeden. </p>
+					Bővebben:<a href="http://mek.oszk.hu/02100/02139/html/sz02/425.html "> Berdál Valéria a Magyar Színházművészeti Lexikonban</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b>Boncz Géza </h4>
+					<img src="img/kep3.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Nagybánya, 1944. október 20. – Budapest, 2000. október 21. </p>
+					<p> magyar író, humorista, kabaré szereplő, a Markó-Nádas-Boncz trió tagja</p><br>
+					<p> Nagybányáról, Romániából, családjával már születése után Szegedre települtek, így sokan úgy tartják, Boncz Géza a város szülöttje. 
+					Eredeti foglalkozását tekintve rádió, -villamossági, -műszaki cikk eladó, de hamar kiderült, hogy humoristaként fogja keresni a kenyerét. 
+					Pár otthoni estje után, 1974-ben a Magyar Rádió I. Humorfesztiválján harmadik helyezést ért el, innentől kezdve rendszeres szereplője volt 
+					a Rádiókabaré műsorának. 1982-ben alakult meg a Markos-Nádas-Boncz trió, miután a II. Humorfesztivált Markos Györggyel és Nádas Györggyel 
+					együtt megnyerték. Budapestre költözött, de számos alkalommal látogatott vissza Szegedre, számos műsorban szerepelt, adott elő. 
+					A szegedi közönség nagyon kedvelte őt, sokszor hívták vissza előadói esteket, kabaré előadásokat tartani. Fiatalon érte a halál, 
+					56 éves volt. </p>
+					Bővebben:<a href=" http://www.szineszkonyvtar.hu/contents/a-e/bonczgelet.htm"> Boncz Géza életrajz</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> József Attila </h4>
+					<img src="img/kep4.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Budapest, 1905. április 11.– Balatonszárszó, 1937. december 3.</p>
+					<p> huszadik századi posztumusz Kossuth- és Baumgarten-díjas magyar költő</p><br>
+					<p> A magyar irodalom és költészet egyik kiemelkedő alakja. József Attila és Szeged kapcsolata a makói diákévek alatt kezdődött, 
+					mivel 1920-tól a makói gimnázium tanulója lett. Jó barátság kötötte Juhász Gyulához, aki tanára és segítője volt a fiatal költőnek. 
+					Ő vitte el a diákköltőt a Színház és Társaság Deák Ferenc utcai szerkesztőségébe, ő egyengette a költői pályáját. 
+					Makón jelent meg első költeménye. 1924-től a Szegedi Tudományegyetem bölcsészkarának tanárszakos hallgatója volt, 
+					de 1925-ben rebellis „Tiszta szívvel ” költeménye miatt kirúgták az egyetemről. A kulturális élet és irodalom számos képviselőjével és 
+					jeles egyéniségével kapcsolatban állt, Európa több egyetemén hallgatott előadásokat, lelkesen képviselte az új magyar költészetet és 
+					erről tartott több alkalommal felolvasásokat. 1935-ben skizofréniával diagnosztizálták. szanatóriumban kezelték. 
+					Felgyógyulásában sokan segítették, viszont jelleme az öngyilkosságba hajszolta.
+					Halála ikonikus, Balatonszárszón vonat elé vetette magát. </p>
+					Bővebben:<a href=" https://hu.wikipedia.org/wiki/J%C3%B3zsef_Attila ">Bő életrajz és életpálya a Wikipédián</a><br>
+					<a href=" http://www.sk-szeged.hu/statikus_html/kiallitas/jozsefattila/index.html">Nem én kiáltok. József Attila Szegeden </a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> Kalmár László</h4>
+					<img src="img/kep5.jpg" alt="Smiley face" width="20%" height="20%">
+					<p>Edde-Alsóbogátpuszta, 1905. március 27. – Mátraháza, 1976. augusztus 2. </p>
+					<p> magyar matematikus, az MTA tagja. Kutatási területe: matematikai analízis, matematikai logika és alkalmazásai, különösen a kibernetika, a számítástudomány és a matematikai nyelvészet </p><br>
+					<p> Budapesti egyetemi éveit követően Szegedre került tanársegédnek. Hamarosan rendes tanári állást töltött be az egyetemen, 
+					majd adjunktusa lett a Bolyai Intézetnek. Rövid időre a Szegedi Tudományegyetem rektora. Számos népművelő és szabadegyetemi előadást tartott.
+					Magyarországon először ő foglalkozott számítógépek elméletével, a számítástudománnyal. 1949-ben a Magyar Tudományos Akadémia levelezős,
+					majd 1961-ben rendes tagjává választotta. Számos díjban és éremben, kitüntetésekben részesült, köztük Kossuth díjban is. 
+					Számos alkalommal járt külföldön is előadásokat tartani. 1976-ban érte a halál Mátraházán, a szegedi Belvárosi temetőben nyugszik.
+					</p>
+					Bővebben:<a href=" http://www.bibl.u-szeged.hu/exhib/evfordulo/kalmar/kalmar.html">Kalmár László emlékezete a Klebelsberg Könyvtárban</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> Karikó Teréz</h4>
+					<img src="img/kep6.jpg" alt="Smiley face" width="20%" height="20%">
+					<p>Budapest, 1932. március 31. - </p>
+					<p> Liszt – díjas szoprán énekesnő, a Szegedi Nemzeti Színház örökös tagja, a Szegedi Zeneművészeti Főiskola Énektagozatának oktatója</p><br>
+					<p> Vaszy Viktor megkeresésére érkezett és szerződött a Szegedi Nemzeti Színházhoz. Az 1960-61-es évadttól kezdve folyamatosan színpadon 
+					szerepelt nyugdíjba vonulásáig. A Stefánia Klubban a Legyen a vendégem című zenés beszélgető-sorozat házigazdája volt. 
+					Művészi alakításait a televízió és a rádió közvetítései révén az egész ország megismerhette. Vendégszerepelt többször Budapesten és 
+					külföldön, Számos díjban és elismerésben részesült. Tanított a Szegedi Zeneművészeti Főiskola Énektagozatán. 
+					Életpályájáról album jelent meg. Ma nyugdíjasként tölti napjait. </p>
+					Bővebben:<a href=" http://mek.oszk.hu/02100/02139/html/sz13/102.html"> Karikó Teréz a Magyar Színházművészeti Lexikonban</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> Kogutowicz Károly</h4>
+					<img src="img/kep7.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Budapest, 1886. február 14. – Ludwigsburg, Württemberg, 1948. szeptember 6.</p>
+					<p> geográfus, egyetemi oktató</p><br>
+					<p> 1923-tól a szegedi egyetemen az általános és összehasonlító földrajz nyilvános rendes tanára lett. 
+					Édesapja hivatása miatt, ő is földrajzi pályára készült. Fontos feladatának tartotta az intézet felszerelését, egy obszervatórium f
+					elállítását a város számára. Sok tanulmánya született, a vidékre és az alföld tanulmányozására, illetve fontos feladatnak tartotta a város 
+					fejlesztését és segítését. 1929-ben a Bölcsészet- nyelv- és történettudományi kar dékánja, majd 1941-től az egyetem rektori pozicióját tölti 
+					be. Számos társaság tagja, sok mindenben részt vett. 1945 elején családjával együtt Drezdába utazott, mert nem akartak orosz fogságba 
+					kerülni. Menekülésük során érte őt váratlan halál, szívrohamban halt meg. </p>
+					Bővebben:<a href="http://www.bibl.u-szeged.hu/exhib/evfordulo/kogutowicz/kogu.html ">Kogutowicz Károly életrajza az Egyetemi Könyvtárban</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> Kopasz Márta</h4>
+					<img src="img/kep8.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Szeged, 1911. október 26. – Szeged, 2011. március 5.</p>
+					<p>szegedi születésű festő és grafikusművész, főiskolai tanár, lektor </p><br>
+					<p>Szegeden született, gimnáziumi tanulmányait is a városban végezte. Egyetemi éveit kovetően visszatért a szülővárosában és aktívan részt vett annak művészeti életében. 
+						Alkotásait a város szinte szünet nélkül kiállította újra és újra, különböző helyeken. A Szegedi Tanárképző Főiskola Rajz és Művészettörténeti Tanszékének adjunktusa volt, 
+						tanított, lektorált, növendékeket képzett az alkotás szeretetére. Kisgrafikákat és ex libriseket is készített, amelyek külföldön is ki lettek állítva. 
+						1997-ben Szeged város díszpolgára lett, de ezen kívül számos díjat, elismerést, érmet nyert. 99 évesen érte a halál, csodálatos kort ért meg.</p>
+					Bővebben:<a href=" http://www.sk-szeged.hu/statikus_html/arckep/kopasz/kopasz_marta.html"> Szegedi arcképcsarnok - Kopasz Márta életrajza</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> Kristó Gyula</h4>
+					<img src="img/kep9.jpg" alt="Smiley face" width="20%" height="20%">
+					<p>Orosháza, 1939. július 11. – Szeged, 2004. január 24. </p>
+					<p> történész, helytörténész, középkor kutató, egyetemi tanár, az MTA levelező tagja.. </p><br>
+					<p> A Szegedi Tudományegyetem Bölcsészettudományi Karán tanult magyar-történelem, majd latin szakon. Akadémiai doktori értekezését is a tudományegyetemen védte meg.
+					Már 1962-től a JATE oktatója, később 1978-tól egyetemi tanára. A kárpát-medencei magyarság története, az államalapítás kora, a középkor időszaka volt a 
+					tudományterülete. Számos tanulmánya és könyve megjelent, ezekről a Délmagyarország is sokszor számolt be. Rengeteg előadást tartott, aktívan részt vett az egyetem 
+					kulturális életében. Rövid időre a BTK dékán helyettese, majd dékánja volt, 3 évig pedig a JATE rektori teendőit is ellátta. Szeged város történetének, 
+					évszázadainak kutatását szívügyének tartotta, Szeged történeti kronológiáját is elkészítette. Ő fordította le ezen kívül magyar nyelvre Szent István király intelmeit
+					és törvényeit, mely nemcsak az egyháztörténészek, hanem a jogászok körében is nagy sikert aratott. Számos díjban és elismerésben részesítették, pl. Szent-Györgyi
+					Albert díj, Szűcs díj, Szegedért Alapítvány tudományos díja. 1998-ban Szeged város díszpolgára lett. Emlékére alapították a Kristó –díjat fiatal középkorkutatók 
+					számára.</p>
+					Bővebben:<a href=" http://jesz.ajk.elte.hu/kristo17.html"> In memoriam Kristó Gyula </a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> Radnóti Miklós</h4>
+					<img src="img/kep10.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Budapest, 1909. május 5. – Abda, 1944. november 9.</p>
+					<p>  magyar költő, a modern magyar líra kiemelkedő személyisége, okleveles tanár</p><br>
+					<p> A Délmagyarország kevés cikket közöl a költőről, bár felvételt nyert a tudományegyetemre és pár évig a városban élt. A numerus clausus miatt a szegedi egyetemre
+					vették fel, bár ő Budapestre jelentkezett. 1930-tól 1934-g tartózkodik Szegeden, szerény környezetben élt, magyar-francia szakon tanult. Sok költeménye Szegeden
+					született vagy a városhoz kapcsolódik. Alapító tagja volt a baloldali Szegedi Fiatalok Művészeti Kollégiumának, itt jelentek meg első költeményei. 
+					Jó barátság kötötte Sík Sándor piarista íróhoz. 1932. december 1-jén publikált először a Nyugat című folyóiratban. 1934 májusában sikeres doktori szigorlatot tett, 
+					miután tanári diplomáját már megszerezte. Júniusban summa cum laude minősítéssel a bölcsészettudományok doktorává avatták. Tanulmányait követően elhagyta a várost, 
+					de számtalanszor visszatért, előadást tartott. A Délmagyarország nem tudósított szomorú halálhíréről, amely 35 évesen Abda közelében érte. 
+					</p>
+					Bővebben:<a href="http://www.sk-szeged.hu/statikus_html/kiallitas/radnoti/radnoti.html "> 100 éve született Radnóti Miklós - emlékkiállítás </a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b>Shvoy Kálmán </h4>
+					<img src="img/kep11.jpeg" alt="Smiley face" width="20%" height="20%">
+					<p>Budapest, 1881. február 12. – Szeged, 1971. október 25. </p>
+					<p> hivatásos katona, altábornagy, ezredes, országgyűlési képviselő, a Magyar Labdarúgó-szövetség  elnöke </p><br>
+					<p> 1903-ban került Szegedre, ahol rögtön megnősült. A város kedvelt egyénisége volt, részt vett a közéletben, minden bálon megjelent, sokan tisztelték és 
+					kedvelték társaságát. 1912-ben századossá léptetik elő. Végigharcolja az első világháborút, többnyire vezérkari posztokon teljesít szolgálatot különböző 
+					alakulatoknál. 1918-ban soron kívül őrnaggyá léptetik elő. Az összeomláskor a 39. honvéd gyaloghadosztály vezérkari főnöke. Ezt követően a szegedi 
+					II. kerületparancsnokság vezérkari főnöke lesz, majd nem sokkal később ezredessé nevezik ki. 1922-ben a szegedi 9. gyalogezred parancsnoka lesz, később az 5. 
+					vegyes dandár gyalogságát irányítja.  1927-ben tábornok, 1929-ben vitézzé avatják. 1930-ban az 5. vegyes dandár parancsnokává nevezik ki, egy évvel később
+					altábornaggyá lép elő. 1934-ben nyugállományba kerül, ezt követően politikusi pályára lép. Haláláig Szegeden maradt, 90 évesen halt meg. 
+					</p>
+					Bővebben:<a href="http://www.bibl.u-szeged.hu/shvoy/shvoy/index.html "> Shvoy Kálmán életrajza és a vele kapcsolatos irodalom</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b>Sík Sándor </h4>
+					<img src="img/kep12.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Budapest, 1889. január 20. – Budapest, 1963. szeptember 28.</p>
+					<p> piarista tanár, tartományfőnök, költő, műfordító, irodalomtörténész,Kossuth –díjas  író, cserkészvezető, az MTA tagja</p><br>
+					<p> Sík Sándor kapcsolata Szegeddel az 1920-as évek elején kezdődött. Ő volt a magyarországi cserkészmozgalom egyik alapítója, amely Szegedre
+					is eljutott. Másrészt, gyakran látogatta a szegedi piarista gimnáziumot. 1929-ben a szegedi egyetemen a Magyar Irodalomtörténeti Tanszék 
+					nyilvános rendes tanára lett. Aktívan részt vett a szegedi piaristák kulturális és pedagógiai életében, illetve számos társaság tagja volt. 
+					A város katolikus rendezvényeinek, eseményeinek állandó jelenlévője volt. 1948-ban a piarista rend magyarországi tartományfőnökévé 
+					választották. Rendszeresen részt vett a Dugonics Társaság különböző rendezvényein, felolvasó ülésein. Írt, alkotott, irodalommal és 
+					irodalomtörténettel kapcsolatos előadásokat tartott a városban és azon kívül. Számos díjban, köztük Kossuth – díjban részesítették. 
+					Drámáját színpadon játszották, többször feldolgozták fiatal társulatok. Budapesten élt később, de sokszor visszatért Szegedre. 
+					A fővárosban halt meg, 74 évesen. 
+					</p>
+					Bővebben:<a href=" http://www.bibl.u-szeged.hu/exhib/evfordulo/"> Sík Sándor az Egyetemi Könyvtár évfordulós emlékcsarnokában </a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b>Szent-Györgyi Albert </h4>
+					<img src="img/kep13.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Budapest, 1893. szeptember 16. – Woods Hole, Massachusetts, 1986. október 22.</p>
+					<p> Nobel-díjas orvos, biokémikus, egyetemi vegyész tanár, a magyar, a szovjet és az amerikai tudományos akadémia tagja, nemzetgyűlési képviselő </p><br>
+					<p> Városunk egyik nagy dicsősége, Szent – Györgyi Albert, aki itt dolgozta ki világhírű találmányát, amelyet Nobel-díjjal tüntettek ki 
+					Stockholmban. Szent – Györgyi Albert az 1920-as évek végén lett a Tudományegyetem vegytanára és munkatársa. Diákjai nagyon kedvelték, 
+					mivel előadói stílusa és pedagógiája sokban különbözött kortársaitól. Még a C-vitamin felfedezése előtt többször elismerték munkásságát, 
+					több szabadegyetemi előadást tartott. Számos alkalommal járt külföldön előadásokat tartani, Európa és világszerte. 1937-ben kapta meg 
+					Nobel-díjat a C-vitamin felfedezéséért, amelyet Stockholmban vehetett át. Ebben az évben választotta a város díszpolgárává is. 
+					Következő évben díszdoktora az egyetemnek és a párizsi Sorbonne-nak is. 1940-ben felajánlotta a Nobel-díját Finnországnak, az akkoriban 
+					kitört téli háború finnországi szenvedőinek. A Délmagyarország állandó jelleggel közölt cikkeket a vegyész hollétéről, kitüntetéseiről, 
+					utazásairól, felszólalásairól. Folyamatosan újabb és újabb kutatásokat végzett, oktatott több helyen, folyamatosan díjazták munkásságát. 
+					Az országban bekövetkezett politikai fordulat és annak következményei miatt 1947-ban Amerikába emigrált, a massachusettsi Woods Hole-ban 
+					telepedett le. 1986-ban a Délmagyarország folytatásos sorozatot közölt a vegyészprofesszor életének szakaszairól. 
+					Többször látogatott haza, de az államokban halt meg 93 évesen. 
+					</p>
+					Bővebben:<a href="http://www.u-szeged.hu/szentgyorgyi/eletrajz?objectParentFolderId=18346 "> Szent-Györgyi Albert emlékoldal a Szegedi Tudományegyetemen</a></b><br>
+					<hr>
+				</div>
+
+				<div class="item">
+					<h4><b> Szőkefalvi – Nagy Béla </h4>
+					<img src="img/kep14.jpg" alt="Smiley face" width="20%" height="20%">
+					<p> Kolozsvár, 1913. július 29. – Szeged, 1998. december 21. </p>
+					<p> Kossuth-díjas matematikus, egyetemi tanár, az MTA tagja </p><br>
+					<p> Szőkefalvi-Nagy Gyula, neves matematikus, fiaként ő is apja nyomdokaiba lépve matematikusi pályát választott. Szegeden szerzett 
+					matematika-fizika szakos diplomát, miután az egyetem Kolozsvárról Szegedre költözött át. Hamarosan megszerezte a doktor, majd egyetemi 
+					tanár lett a tudományegyetemen. Többször volt dékánja a Természettudományi Karnak, illetve tanszékvezetője az Ábrázoló Geometriai, 
+					Függvénytani és Analízis Tanszéknek. 1945-ben lett a MTA tagja. Számos előadást tartott a városban, sokszor járt külföldön. 
+					A világ számos pontján tartott előadást, konferenciákon vett részt. 1991-ben Szeged város díszpolgára lett, de ezen kívül számos alkalommal
+					díjazták: például 1942-ben Kőnig Gyula érem,  Kossuth díj, Állami díj 1978-ban, Lomonoszov-aranyérem, Akadémiai aranyérem, stb. 
+					Több egyetem díszdoktora. 1990-től a Tudományegyetem emeritus professzora. A tudományos közéletben állandó jelleggel részt vett. 
+					1998-ban, nyugdíjas korában érte a halál, Szegeden nyugszik.  </p>
+					Bővebben:<a href="http://www.bibl.u-szeged.hu/exhib/evfordulo/ "> Szőkefalvi – Nagy Béla életrajza az Egyetemi Könyvtár évfordulós emlékcsarnokában</a></b><br>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
+		</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid">
+		<div class="col-lg-6">
+			<p class="copyright">Copyright &#169; 2016 Biber Evelin <br> Szakdolgozat SZTE-BTK Informatikus Könyvtáros MA</p>
+		</div>
+		<div class="col-lg-6 text-right">
+			<p>
+				<a href="http://dm.ek.szte.hu/szteda/delmagyar?p=0" target="_blank">Délmagyarország Repozitórium SZTE EK;</a> | 
+				<a href="http://www.openstreetmap.hu/" target="_blank">OpenStreetMap.hu;</a>
+			</p>
+		</div>
+	</footer>
+
+	<script>
+		$(document).ready(function() {
+			$("#myCarousel").swiperight(function() {
+				  $(this).carousel('prev');
+					});  
+				$("#myCarousel").swipeleft(function() {
+					$(this).carousel('next');
+			});
+		}); 
+	</script>
+</body>
+</html>

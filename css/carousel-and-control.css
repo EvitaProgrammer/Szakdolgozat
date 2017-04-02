@@ -1,0 +1,14 @@
+/*Bootstrap carousel and Control CSS*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+
+.carousel-inner > .item {
+	padding: 10px;
+}
+
+.controls {
+	padding: 10px;
+}
